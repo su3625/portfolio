@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/etc/favicon.ico">
+    <title>테트리스</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/service.css">
+
+
+</head>
+<body>
+    <header id="service_header">
+        <nav>
+            <div class="logo"><a href="index.html"><img src="images/etc/logo.png" alt="테트리스"></a></div>
+            <ul class="util">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="terms.html">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="service_wrap">
+        <div class="login">
+            <form>
+              <fieldset>
+                <h2>로그인</h2>
+                <div class="e_pw">
+                    <input type="email" placeholder="아이디" required oninvalid="this.setCustomValidity('이메일로 구성된 아이디를 입력해주세요.')"
+                    oninput="this.setCustomValidity('')">
+                    <input type="password" placeholder="비밀번호" required oninvalid="this.setCustomValidity('비밀번호를 입력해주세요.')"
+                    oninput="this.setCustomValidity('')">
+                </div>
+                <div class="checkbox">
+                    <div class="checkbox_wrap">
+                        <input type="checkbox" id="save_id"> <label for="save_id">아이디 저장</label>
+                        <input type="checkbox" id="stay_login"> <label for="stay_login">로그인 상태 유지</label>
+                    </div>    
+                    <a href="#"><span>비밀번호 찾기</span></a>
+                </div>
+                <button type="submit"><span>로그인</span></button>
+              </fieldset>
+              <div class="login_join">
+                    <p>테트리스가 처음이신가요?</p> <a href="terms.html">회원가입</a>
+              </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

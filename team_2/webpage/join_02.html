@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/etc/favicon.ico">
+    <title>테트리스</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/service.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sub.js"></script>
+
+</head>
+<body>
+    <header id="service_header">
+        <nav>
+            <div class="logo"><a href="index.html"><img src="images/etc/logo.png" alt="테트리스"></a></div>
+            <ul class="util">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="terms.html">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="service_wrap">
+        <div class="join_02">
+            <form>
+              <fieldset>
+                    <h2>회원가입</h2>
+                    <div class="sub_txt2">아이디</div>
+                    <div class="name">
+                        <input type="text" placeholder="이름을 입력해주세요." id="id"><label for="id"> @terenz.kr</label>
+                    </div>
+                    <div class="password">
+                        <div class="sub_txt2">비밀번호<br>
+                            <span>비밀번호는 영문, 숫자, 특수문자를 포함한 8~20자 로 구성해주세요.</span>
+                        </div>
+                        <div class="pswd_wrap1">
+                            <input type="password" id="password1" class="pswd" placeholder="비밀번호를 입력해주세요." minlength="8" maxlength="20">
+                            <div class="eye1 unvisible"><img id="eye1" src="images/etc/password_unvisible.png" alt="비밀번호"></div>
+                        </div>
+                        <div class="pswd_wrap2">
+                            <input type="password" id="password2" class="pswd" placeholder="비밀번호를 확인해주세요." minlength="8" maxlength="20">
+                            <div class="eye2 unvisible"><img src="images/etc/password_unvisible.png" alt="비밀번호"></div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="sub_txt2">이메일</div>
+                        <input type="text" placeholder="이메일을 입력해주세요.">
+                    </div>
+                    <div class="phone">
+                        <div class="sub_txt2">휴대폰</div>
+                        <input type="text" placeholder="휴대폰번호를 입력해주세요">
+                    </div>
+                    <div class="btn"><a href="join_end.html">다음</a></div>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

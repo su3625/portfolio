@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/etc/favicon.ico">
+    <title>테트리스</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/service.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sub.js"></script>
+
+</head>
+<body>
+    <header id="service_header">
+        <nav>
+            <div class="logo"><a href="index.html"><img src="images/etc/logo.png" alt="테트리스"></a></div>
+            <ul class="util">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="service_wrap">
+        <div class="join">
+            <form>
+              <fieldset>
+                <h2>회원가입</h2>
+                <div class="sub_txt">약관동의</div>
+                <div class="agree_box">
+                    <div class="agree">
+                        <div class="agree_all">
+                            <label class="check">
+                                <input type="checkbox" id="check_all" class="select_all">
+                                <span class="txt">모두동의</span>
+                            </label>
+                        </div>
+                    </div>
+                    <ul class="agree_list">
+                        <li>
+                            <label class="check">
+                                <input type="checkbox" name="slected" class="select">
+                                <span class="txt">[필수] 이용약관</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="check">
+                                <input type="checkbox" name="slected" class="select">
+                                <span class="txt">[필수] 개인정보 수집 및 이용에 대한 동의</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="check">
+                                <input type="checkbox" name="slected" class="select">
+                                <span class="txt">[필수] 만 14세 이상입니다.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn"><a href="join_01.html">다음</a></div>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
