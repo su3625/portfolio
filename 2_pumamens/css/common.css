@@ -1,0 +1,83 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@font-face {
+    font-family: "MYPUMA";
+    src: url(../asset/fonts/MYPUMA__.TTF);
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: "Pretendard","맑은 고딕", sans-serif; font-size: 16px; font-weight: 400; color: #333; }
+body::-webkit-scrollbar { display: none; }
+li {list-style: none;}
+img, video, input { vertical-align: middle; }
+a { text-decoration: none; color: inherit; }
+
+main { width: calc(100vw - 55px); }
+
+#about, #help { display: none; }
+.header_about,.header_help { display: none; }
+
+/* 헤더 */
+header { width: calc(100vw - 55px); height: 12vw; border-bottom: 2px solid #000; background: #fff; position: fixed; left: 0; top: 0; z-index: 2; }
+.logo { position: absolute; left: 1vw; top: 1.8vw; width: 28vw;  }
+.logo img { width: 100%; }
+.header_subtitle,.header_about,.header_help { padding-left: 48vw; margin-right: 2%; line-height: 1.1; font-size: 10vw; text-align: right; font-family: "MYPUMA"; color: #000;  }
+@media screen and (max-width:1100px) {
+    .header_subtitle { padding-left: 45vw; margin-right: 2%; line-height: 1.1; font-size: 10vw; text-align: right; font-family: "MYPUMA"; color: #000;  }
+    
+}
+@media screen and (max-width:768px) {
+    header { width: calc(100vw - 30px);  }
+    .header_subtitle,.header_about,.header_help { padding-left: 30vw; margin-right: 20px; line-height: 1.1; font-size: 10vw; text-align: right; font-family: "MYPUMA"; color: #000;  }
+}
+
+
+/* 메뉴바 */
+.menu_bar { cursor: pointer; position: fixed; right: 0; top: 0; z-index: 3; width: 55px; height: 100vh; background: #FF0015;   color: #fff; transition: all 0.5s; display: flex; }
+
+.menu_bar>span { position: absolute; bottom: 1vw; right: 50%; transform-origin: bottom right; transform: rotate(90deg) translateY(50%);  transition: all 0.5s; font-size: 26px; font-weight: 600; }
+
+.menu_bar_fold { border-left: 2px solid #000; border-right: 0; }
+.menu_bar_unfold { border-left: 0; border-right: 2px solid #000; transform: translateX(calc(-100vw + 55px)) ; }
+
+@media screen and (min-width:1200px) {
+    .menu_bar:hover { cursor: pointer; width: 60px; }
+    .menu-bar-unfold:hover {transition: 0.5s; width: 60px; right: -5px;}
+}
+/* @media screen and (min-width:768px) and (max-width:1025px) {
+    .menu_bar_unfold { transform: translateX(-100vw) translateX(55px); }
+} */
+
+/* @media screen and (max-width:1024px) {
+    .menu_bar_unfold { transform: translateX(-100vw) translateX(70px); }
+} */
+@media screen and (max-width:768px) {
+    .menu_bar { width: 32px; }
+    .menu_bar>span { bottom: 5vw; font-size: 20px; font-weight: 400; }
+    .menu_bar_unfold { transform: translateX(calc(-100vw + 32px)); }
+    
+}
+
+/* 메뉴 */
+.menu_content { overflow: auto; background: #fff; position: fixed; top: 0; width: calc(100vw - 55px); height: 100%; scrollbar-width: none; z-index: 2; }
+
+.menu_content_hide { transform: translateX(105%); transition: all 0.5s;  }
+.menu_content_show { transform: translateX(55px); transition: all 0.5s; }
+
+.menu_item { cursor: pointer; border-bottom: 3px solid #000; background: #fff; height: 12vw; width: calc(100vw - 55px); font-size: 8vw; font-family: "MYPUMA"; color: #000; transition: all 0.2s; }
+.menu_item:hover { background: #FF0015; color: #fff; }
+.menu_logo { padding-left: 0.5%;  }
+.menu_logo img { width: 24vw; padding-bottom: 2%;}
+/* #category_btn { display: flex; justify-content: space-between; flex-wrap: wrap; } */
+#category_btn { position: relative; }
+.category_arrow { width: 12vw; position: absolute; right: 0; top: -5%; transform: rotate(180deg); transition: all 0.5s; }
+.category_arrow img { width: 100%;  }
+.category_hide { height: 0; overflow: hidden; transition: all 0.5s; border-bottom: 0; }
+.category_show { height: 12vw; border-bottom: 1px solid #000; }
+.category_arrow_up { transform: rotate(360deg); }
+@media screen and (max-width:768px) {
+    .menu_content { overflow: auto; background: #fff; position: fixed; top: 0; width: calc(100vw - 30px);  height: 100%; scrollbar-width: none; z-index: 2; }
+    .menu_item { width: calc(100vw - 30px); padding-left: 10px; }
+    .menu_content_show { transform: translateX(30px); transition: all 0.5s; }
+    
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" href="./images/favicon.ico">
+    <title>PUMA-MEN'S</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Swiper 슬라이드 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="logo"><a href="./index.html"><img src="images/logo.png" alt="푸마"></a></div>
+        <div class="header_subtitle">SPEEDCAT</div>
+        <div class="header_about">ABOUT</div>
+        <div class="header_help">HELP</div>
+    </header>
+
+    <!-- 메뉴바 -->
+    <nav class="menu">
+        <div class="menu_bar menu_bar_fold">
+            <span>MENU</span>
+        </div>
+        <div class="menu_content menu_content_hide">
+            <div class="menu_item menu_logo"><a href="./index.html"><img src="images/logo.png" alt="푸마"></a></div>
+            <div class="menu_item menu_about"><a href="#about"><span>ABOUT</span></a></div>
+            <div class="menu_item" id="category_btn">
+                <span>CATEGORIES</span>
+                <div class="category_arrow"><span><img src="images/etc/arrow.png" alt="화살표"></span></div>
+            </div>
+            <div class="menu_item category_hide" id="prod1">SPEEDCAT</div>
+            <div class="menu_item category_hide" id="prod2">PALERMO</div>
+            <div class="menu_item category_hide" id="prod3">NITRO</div>
+            <div class="menu_item category_hide" id="prod4">OUTER</div>
+            <div class="menu_item category_hide" id="prod5">TOP</div>
+            <div class="menu_item category_hide" id="prod6">PANTS</div>
+            <div class="menu_item menu_help"><a href="#help"><span>HELP</span></a></div>
+        </div>
+    </nav>
+
+    <div id="wrap">
+        <!-- #main -->
+        <main id="main">
+            <!-- 메인 슬라이드 -->
+            <div class="main_product">
+                <!-- Slider main container -->
+                <div class="swiper main_product_list">
+                    <!-- Additional required wrapper -->
+                    <ul class="swiper-wrapper">
+                        <!-- Slides -->
+                        <li class="swiper-slide">
+                            <div class="card1">
+                                <div class="product_img sc_og"><a href="./sub/sub01.html"><img src="images/shoes/s_speedcat_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">SPEEDCAT OG</p>
+                                        <p class="card_txt">FOR ALL TIME RED-PUMA WHITE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img sc_mid"><a href="./sub/sub02.html"><img src="images/shoes/s_speedcatm_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">SPEEDCAT MID</p>
+                                        <p class="card_txt">FOR All TIME RED-WARM WHITE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub03.html"><img src="images/shoes/s_palermo_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">PALERMO</p>
+                                        <p class="card_txt">MARS RED-CARAMEL LATTE-GUM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub04.html"><img src="images/shoes/s_palermop_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">PALERMO PREMIUM</p>
+                                        <p class="card_txt">PUMA BLACK-WARM WHITE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub05.html"><img src="images/shoes/s_dvnitro_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">DEVIATE NITRO 3</p>
+                                        <p class="card_txt">PUMA WHITE-FEATER GRAY-PUMA SILVER</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub06.html"><img src="images/shoes/s_nitro_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">FOREVER RUN NITRO 2 SAYSKY</p>
+                                        <p class="card_txt">FEATER GRAY-FLAT LIGHT GRAY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub07.html"><img src="images/outer/s_outer1_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">ARCHIVE SEASONAL RELAXED RACER JACKET</p>
+                                        <p class="card_txt">FOR ALL TIME RED</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub08.html"><img src="images/outer/s_outer2_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">PUMA X KIDSUPER WINDBREAKER</p>
+                                        <p class="card_txt">DUSTY GREEN</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub09.html"><img src="images/top/s_top1_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">PUMA X KIDSUPER PROGRESSIVE HOODIE</p>
+                                        <p class="card_txt">ARCHIVE GOLD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub10.html"><img src="images/top/s_top2_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">F1 OVERSIZED LS TEE</p>
+                                        <p class="card_txt">PUMA BLACK</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub11.html"><img src="images/pants/s_pants1_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">PUMA X LIBERAIDERS PANTS</p>
+                                        <p class="card_txt">VELVET MOSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card1">
+                                <div class="product_img"><a href="./sub/sub12.html"><img src="images/pants/s_pants2_01.jpg" alt="상품"></a></div>
+                                <div class="card_header">
+                                    <div class="card_header_txt">
+                                        <p class="card_title">PUMA X KIDSUPER PANTS</p>
+                                        <p class="card_txt">PUMA BLACK</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- 반응형 슬라이드 -->
+            <div class="vertical_mp">
+                <!-- Slider main container -->
+                <div class="swiper2 main_product_vertical">
+                    <!-- Additional required wrapper -->
+                    <ul class="swiper-wrapper">
+                        <!-- Slides -->
+                        <li class="swiper-slide">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub01.html"><img src="images/shoes/s_speedcat_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">SPEEDCAT OG</p>
+                                        <p class="card_txt2">FOR ALL TIME RED-PUMA WHITE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub02.html"><img src="images/shoes/s_speedcatm_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">SPEEDCAT MID</p>
+                                        <p class="card_txt2">FOR All TIME RED-WARM WHITE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub03.html"><img src="images/shoes/s_palermo_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">PALERMO</p>
+                                        <p class="card_txt2">MARS RED-CARAMEL LATTE-GUM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub04.html"><img src="images/shoes/s_palermop_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">PALERMO PREMIUM</p>
+                                        <p class="card_txt2">PUMA BLACK-WARM WHITE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub05.html"><img src="images/shoes/s_dvnitro_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">DEVIATE NITRO 3</p>
+                                        <p class="card_txt2">PUMA WHITE-FEATER GRAY-PUMA SILVER</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub06.html"><img src="images/shoes/s_nitro_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">FOREVER RUN NITRO 2 SAYSKY</p>
+                                        <p class="card_txt2">FEATER GRAY-FLAT LIGHT GRAY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub07.html"><img src="images/outer/s_outer1_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">ARCHIVE SEASONAL RELAXED RACER JACKET</p>
+                                        <p class="card_txt2">FOR ALL TIME RED</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub08.html"><img src="images/outer/s_outer2_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">PUMA X KIDSUPER WINDBREAKER</p>
+                                        <p class="card_txt2">DUSTY GREEN</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub09.html"><img src="images/top/s_top1_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">PUMA X KIDSUPER PROGRESSIVE HOODIE</p>
+                                        <p class="card_txt2">ARCHIVE GOLD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub10.html"><img src="images/top/s_top2_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">F1 OVERSIZED LS TEE</p>
+                                        <p class="card_txt2">PUMA BLACK</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub11.html"><img src="images/pants/s_pants1_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">PUMA X LIBERAIDERS PANTS</p>
+                                        <p class="card_txt2">FVELVET MOSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide product">
+                            <div class="card2">
+                                <div class="product_img2"><a href="./sub/sub12.html"><img src="images/pants/s_pants2_01.jpg" alt="상품"></a></div>
+                                <div class="card_header2">
+                                    <div class="card_header_txt2">
+                                        <p class="card_title2">PUMA X KIDSUPER PANTS</p>
+                                        <p class="card_txt2">PUMA BLACK</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div id="none"></div>
+            </div>
+        </main>
+    
+        <!-- #about -->
+        <main id="about">
+            <div class="dynamic_container">
+                <div class="left">
+                    <p class="top_img"><img src="images/etc/about_01.jpg" alt="어바웃"></p>
+                    <p class="bottom_img"><img src="images/etc/about_02.jpg" alt="어바웃"></p>
+                </div>
+    
+    
+                <div class="right">
+                    <div class="right_txt">
+                        푸마는 독일의 스포츠 브랜드로, '가장 빠른 스포츠 브랜드'라는 목표를 가지고 있습니다. <br>
+                        활기차고 열정적인 회사 문화를 만들어내고, 하나의 목표를 향해 끊임없이 노력하며 성장하고 있습니다.<br> 
+                        밀레니얼 세대로 구성된 젊은 팀으로, 건강한 워라밸과 유연한 업무 환경을 제공하며 개인의 자유를 존중하는 문화를 가지고 있습니다.<br>
+                        푸마는 'Speed & Spirit'을 모토로 삼아 개개인의 능력과 팀워크를 중요하게 생각하며, 함께 성장해 나가는 것을 추구합니다. <br>
+                        푸마는 스포츠 의류, 신발, 액세서리 등을 판매하며, 다양한 스포츠 분야와 라이프스타일 제품을 선보이고 있습니다.
+                    </div>
+    
+    
+                    <div class="right_sns">
+                        <a href="https://www.instagram.com/puma_kr/" target="_blank">INSTAGRAM</a>
+                        <a href="https://www.facebook.com/PUMAKorea" target="_blank">FACEBOOK</a>
+                        <a href="https://www.youtube.com/puma" target="_blank">YOUTUBE</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- #help -->
+        <main id="help">
+            <div class="dynamic_container">
+                <div class="left">
+                    <p class="top_img2"><img src="images/etc/v_puma.jpg" alt="어바웃"></p>
+                </div>
+    
+    
+                <div class="right">
+                    <div class="right_txt help_text">
+                        <div class="help_wrap">
+                            <div class="delivery">배송안내</div>
+                            <div class="delivery_txt txt_hide">
+                                <div class="dt_wrap">
+                                    <h3>무료 배송/반품 서비스</h3>
+                                    <p>
+                                        푸마 온라인 스토어는 최상의 서비스 제공을 위하여 노력하고 있습니다. 이러한 노력의 일환으로, 무료 배송 서비스를 제공하고 있습니다.  회원과 비회원 모두 무료 배송, 무료 반품 서비스를 이용하실 수 있습니다. 
+                                    </p>
+                                    <h3>전국배송이 가능한가요?</h3>
+                                    <p>
+                                        PUMA 상품은 군부대를 제외한 전국 어느 곳이나 배송이 가능합니다.
+                                    </p>
+                                    <h3>배송지를 변경하고 싶어요.</h3>
+                                    <p>
+                                        결제가 완료된 이후에는 배송지 변경을 할 수 없으므로, 취소 후 재구매를 권장드립니다. 
+                                    </p>
+                                    <h3>해외배송이 가능한가요?</h3>
+                                    <p>
+                                        푸마 온라인 스토어는 국내에 한해 배송이 가능하며, 해외배송 서비스는 현재 제공되지 않습니다. 
+                                    </p>
+                                    <h3>배송 기간은 얼마나 걸리나요?</h3>
+                                    <p>
+                                        배송기간은 상품의 특성에 따라 다르므로 상품 개별페이지를 통해 안내된 내용을 참고 부탁드립니다.
+                                        기본적인 당사의 출고는 오후 2시를 기준으로 마감되며, 평균 배송기간은 2~3일, 도서 및 산간 지역은 3~5일 가량 소요될 수 있습니다.<br>
+            
+                                        (주문 당일 및 주말, 공휴일 제외)<br>
+            
+                                        단, 주문량 급증 및 명절과 같은 특수 시즌에는 추가 배송 소요기간이 발생할 수 있으니 이점 양해 부탁 드립니다.
+                                        배송이 지연되는 경우 미리 공지드리도록 하겠습니다.
+                                        결제수단이 실시간계좌이체(인터넷뱅킹인 경우) 입금확인이 된 후 상품발송을 진행하므로 배송기간에 다소 차이가 발생할 수 있습니다.<br>
+            
+                                        월말 주문 건의 경우, 정기 시스템 점검에 의해 배송이 다소 지연될 수 있는 점 양해 부탁 드립니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="help_wrap">
+                            <div class="change">환불 / 교환안내</div>
+                            <div class="change_txt txt_hide">
+                            <div class="ct_wrap">
+                                <p>
+                                    ① 환불은 아래 각 호의 경우 증서 또는 영수증에 기재된 제품의 구입가격을 기준으로 하여 구입 시 온라인으로 진행함을 원칙으로 합니다.  구입가격에 다툼이 있을 때는 서면증거자료에 기재된 금액과 다른 금액을 주장하는 자가 입증하여야 하며, 입증이 불가능한 경우에는 동일  또는 가장 유사한 제품의 시장 소매 가격을 기준으로 합니다.
+                                </p>
+                                <p>
+                                    1. 고객이 구입한 제품에 하자가 발견되어, 고객이 당해 제품을 공급받은 날부터 3개월 이내, 그 하자를 안 날 또는 알 수 있었던 날부터         30일 이내에 환불 신청을 한 경우. 단, 고객 과실에 의한 하자는 제외됩니다.<br>
+                                    2. 고객이 표시된 가격을 초과하여 제품을 구입한 경우 양 당사자가 합의하여 차액만을 환불해드립니다.<br>
+                                    3. 광고 또는 표시와 제품의 내용이 중대하게 불일치한 경우 환불해드립니다.
+                                </p>
+                                <p>
+                                    ② “몰”에서 판매되는 재화등의 수량은 재고 상황에 따라 제한될 수 있습니다. “몰”은 고객이 구매신청한 재화등이 재고 부족, 품절 등의 사유로 인도 또는 제공을 할 수 없을 때에는 지체없이 그 사유를 고객에게 통지하고 사전에 재화 등의 대금을 받은 경우에는 대금을 받은 날부터  3영업일 이내에 환급하거나 환급에 필요한 조치를 취합니다. 
+                                </p>
+                            </div>       
+                            </div>
+                        </div>
+
+                        <div class="help_wrap">
+                            <div class="customer">고객센터</div>
+                            <div class="customer_txt txt_hide">
+                                <div class="cut_wrap">
+                                    <p>
+                                        온라인스토어 문의 : 080-857-0777<br>
+                                        이메일 문의: webmaster.kr@puma.com<br>
+                                        (평일 10시~17시, 점심시간 12시~14시 제외), 주말 및 공휴일(임시공휴일 포함) 제외
+                                    </p>
+                                    <p>
+                                        오프라인스토어 문의 : 080-082-0888<br>
+                                        (평일 10시~17시, 점심시간 12시~14시 제외), 주말 및 공휴일(임시공휴일 포함) 제외
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* 상품헤더 */
+.header_product { width: calc(100vw - 55px); height: 12vw; border-bottom: 2px solid #000; background: #fff; position: fixed; left: 55px; top: 0; }
+.product_subtile { text-align: right; font-size: 10vw; font-family: "MYPUMA"; color: #000; margin-right: 2%; line-height: 1.1; }
+
+
+/* back바 */
+nav { position: relative; }
+.back { position: fixed; left: 0; top: 0; z-index: 3; }
+.back_bar {  width: 55px; height: 100vh; background: #ff0015; border-right: 2px solid #000; color: #fff; transition: all 0.5s; }
+.back_bar>a { display: block; height: 100vh; }
+.back_bar>a>span { transform: rotate(90deg) translateY(-50%); position: absolute; top: 1vw; left: 50%; transform-origin: top left; font-size: 26px; font-weight: 600; width: 100%;  }
+
+
+
+@media screen and (min-width:1025px) {
+    .back_bar:hover {  width: 60px; }
+}
+
+@media screen and (max-width:800px) {
+    .header_product { width: calc(100vw - 30px); height: 12vw; border-bottom: 2px solid #000; background: #fff; position: fixed; left: 30px; top: 0; }
+    .back_bar { width: 30px; }
+    .back_bar>a>span { font-size: 20px; font-weight: 400; }
+}
+
+/* 본문 */
+.product_wrap { width: calc(100vw - 55px); padding-top: 12vw; margin-left: 55px;  position: relative; }
+.product_wrap .prod_left { width: 55%; height: calc(100vh - 12vw); border-right: 2px solid #000; overflow-y: auto; overflow-x: hidden; scroll-snap-type: y mandatory; scrollbar-width: none; position: absolute; left: 0; top: 12vw; }
+.product_wrap .prod_right { position: absolute; right: 0; top: 12vw; width: 45%; height: calc(100vh - 12vw); }
+.product_wrap .prod_left img { width: 100%; }
+
+.prod_right p { width: 100%; font-size: 1.8vw; color: #000; border-bottom: 2px solid #000; padding: 20px 10px;  font-weight: 600; }
+.prod_right p:nth-child(3) { border-bottom: 0; padding: 20px 10px;  font-weight: 500; font-size: 1.6vw; padding: 20px; text-align: justify; }
+.prod_right p:nth-child(4) { border-bottom: 0; padding: 20px 10px;  font-weight: 500; font-size: 1.6vw; padding: 20px; }
+.share { cursor: pointer; position: absolute; right: 0; bottom: 0; border-bottom: 0; border-top: 2px solid #000; transition: all 0.3s; background: #fff; }
+.share:hover { background: #ff0015; color: #fff;}
+/* .share_hide { display: none; background: #fff;  }
+.share_show { display: block;  } */
+@media screen and (max-width:800px) {
+    .product_wrap { width: calc(100vw - 30px); padding-top: 12vw; margin-left: 30px; position: static; }
+    .product_wrap .prod_left { width: calc(100vw - 30px); height: calc(100% - 12vw); border-right: 2px solid #000; overflow-y: hidden; overflow-x: hidden; scroll-snap-type:none; scrollbar-width: none; position: static; left: 30px; top: 12vw; }
+    .product_wrap .prod_right { position: static; width: calc(100vw - 30px); height: 50vh; }
+    .share { position: fixed; left: 0; bottom: 0;  }
+    .share span { margin-left: 50px; font-size: 16px; }
+    .prod_right p { font-size: 22px;  }
+    .prod_right p:nth-child(3) { font-weight: 500; font-size: 20px; padding: 20px; }
+    .prod_right p:nth-child(4) { font-weight: 500; font-size: 20px; padding: 20px; }
+}
+
+@media screen and (max-width:500px) {
+    .prod_right p { font-size: 20px;  }
+    .prod_right p:nth-child(3) { font-weight: 500; font-size: 18px; padding: 20px; }
+    .prod_right p:nth-child(4) { font-weight: 500; font-size: 18px; padding: 20px; }
+}

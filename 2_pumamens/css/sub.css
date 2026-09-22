@@ -1,0 +1,73 @@
+/* #about */
+.dynamic_container { width: calc(100vw - 55px);  margin-top: 12vw; display: flex;  background: #fff; }
+.dynamic_container .left { width: 50%; height: calc(100vh - 12vw);  border-right: 2px solid #000; overflow-y: auto; overflow-x: hidden; scroll-snap-type: y mandatory; scrollbar-width: none; }
+.dynamic_container .right { width: 50%; overflow-y: auto; overflow-x: hidden;  }
+
+/* 왼쪽 이미지 */
+.top_img img { width: 100%; height: 100%; }
+.bottom_img img { width: 100%; height: 100%; }
+
+/* 오른쪽 텍스트 */
+.right_txt {  line-height: 1.5; font-size: 1.6rem; font-weight: 600; color: #000; text-align: justify; border-bottom: 2px solid #000;  padding: 20px; }
+.right_sns { font-size: 1.9rem; font-weight: 600; color: #000; }
+.right_sns>a { display: block; border-bottom: 2px solid #000; padding: 20px 10px; transition: all 0.2s; }
+.right_sns>a:hover { background: #FF0015; color: #fff; }
+
+@media screen and (max-width:1480px) {
+    .right_txt { width: 100%; line-height: 1.5; font-size: 1.5rem; font-weight: 600; color: #000; text-align: justify; border-bottom: 2px solid #000;  padding: 20px; }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .dynamic_container { width: calc(100vw - 55px);  margin-top: 12vw; display: block;  background: #fff; }
+    .dynamic_container .left { width: 100%; height: 100%;  border-right: 0; scroll-snap-type: none; display: flex;}
+    .dynamic_container .right { width: 100%; margin: 0 auto; overflow-y: auto; overflow-x: hidden;  }
+
+    .right_txt { font-size: 1.2rem;  }
+}
+@media screen and (max-width:768px) {
+    .dynamic_container { width: calc(100vw - 30px);  margin-top: 12vw; display: block;  background: #fff; }
+    .dynamic_container .left { width: 100%; height: 100%;  border-right: 0; scroll-snap-type: none; display: flex;}
+    .dynamic_container .right { width: 100%; overflow-y: auto; overflow-x: hidden;  }
+    .right_txt { width: 100%; line-height: 1.5; font-size: 1.2rem; font-weight: 600; color: #000; text-align: justify;  border-bottom: 2px solid #000;  padding: 20px; }
+}
+
+
+
+
+/* #help */
+/* .top_img2 { transform: rotate(90deg);} */
+.top_img2 img { width: 100%; height: 100%; }
+
+.help_text { height: calc(100vh - 12vw); border-bottom: none; padding: 0; overflow-y: auto; overflow-x: hidden; scroll-snap-type: y mandatory; scrollbar-width: none; text-align: justify; }
+
+.delivery { padding: 20px 10px; border-bottom: 2px solid #000; }
+.change { padding: 20px 10px; border-bottom: 2px solid #000; }
+.customer { padding: 20px 10px; border-bottom: 2px solid #000; }
+.delivery:hover { cursor: pointer; background: #FF0015; color: #fff; }
+.change:hover { cursor: pointer; background: #FF0015; color: #fff; }
+.customer:hover { cursor: pointer; background: #FF0015; color: #fff; }
+/* .txt_hide {  height: 0; overflow: hidden; transition: all 0.5s; border-bottom: 0; } */
+/* .txt_show { height: 40vh; border-bottom: 2px solid #000; } */
+
+
+.txt_hide { height: 47vh; }
+.delivery_txt { overflow-y: auto; overflow-x: hidden; scroll-snap-type: y mandatory; scrollbar-width: none;  border-bottom: 2px solid #000;}
+.dt_wrap { padding: 10px; }
+.dt_wrap>p { margin-bottom: 20px; }
+.change_txt { overflow-y: auto; overflow-x: hidden; scroll-snap-type: y mandatory; scrollbar-width: none;  border-bottom: 2px solid #000;}
+.ct_wrap { margin: 10px; }
+.change_txt>.ct_wrap>p:nth-child(2) { padding: 20px; font-size: 1.4rem; }
+
+.customer_txt { width: 100%; border-bottom: 2px solid #000; }
+.cut_wrap{ margin: 10px; }
+.cut_wrap>p { margin-bottom: 20px; }
+
+@media screen and (max-width:1024px) {
+    .top_img2 img{ content: url(../images/etc/puma.jpg); width: 100%; }
+    .dt_wrap { padding: 20px; }
+    .ct_wrap { margin: 20px; }
+    .cut_wrap{ margin: 20px; }
+    .change_txt>.ct_wrap>p:nth-child(2) {  font-size: 1.1rem; }
+}
